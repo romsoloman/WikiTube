@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>WikiTube</title>
+</head>
+
+<body>
+    <main class="main-container">
+        <header class="main-header">
+            <h1 class="head">WikiTube</h1>
+            <input type="search" class="search" name="search" placeholder="Search"
+                onkeyup="onSearchVideo(this.value,event)" />
+        </header>
+        <section class="main-content">
+            <article class="videos-list">
+            </article>
+            <article class="video-details">
+                <iframe src="" allowfullscreen></iframe>
+                <aside class=" wikipedia-result">
+                    <h2 class="band-name"></h2>
+                    <h4 class="band-secondly"></h4>
+                    <p class="band-desc"></p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <script src="lib/axios.js"></script>
+    <script src="js/wikiTube-service.js"></script>
+    <script src="js/wikiTube-controller.js"></script>
+</body>
+
+</html>
